@@ -396,4 +396,113 @@ section {
   font-size: 14px;
   font-family: 'Montserrat semibold';
 }
+
+.catalog {
+  background-color: #f6f5f4;
+}
+
+.catalog__title {
+  max-width: 500px;
+  margin-bottom: 75px;
+}
+
+.catalog-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.catalog-card {
+  -ms-flex-preferred-size: 33%;
+      flex-basis: 33%;
+  max-width: 350px;
+  margin-bottom: 35px;
+  -webkit-box-shadow: 0px 0px 20px 9px rgba(0, 0, 0, 0.08);
+          box-shadow: 0px 0px 20px 9px rgba(0, 0, 0, 0.08);
+}
+
+.catalog__img {
+  width: 100%;
+  height: 350px;
+  background-color: #b1d7e8;
+}
+
+.catalog-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 26px 22px 36px 22px;
+}
+
+.catalog-info__title {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  margin-bottom: 26px;
+  font-size: 15px;
+  font-family: 'Montserrat semibold';
+}
+
+.catalog-info__price {
+  font-size: 18px;
+  color: #ffcc01;
+  font-family: 'Montserrat semibold';
+}
+
+.catalog-info__room {
+  font-size: 13px;
+  text-transform: uppercase;
+  color: #919eb1;
+}
+
+.catalog-info__bath {
+  position: relative;
+}
+
+.catalog-info__bath::before {
+  content: '';
+  position: absolute;
+  background: url(../img/catalog/bathroom.svg) no-repeat 50%;
+  left: -20px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  background-size: 12px 12px;
+  width: 12px;
+  height: 12px;
+}
+
+.catalog-info__bed {
+  position: relative;
+  margin-left: 45px;
+}
+
+.catalog-info__bed::before {
+  content: '';
+  position: absolute;
+  background: url(../img/catalog/bed.svg) no-repeat 50%;
+  left: -20px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  background-size: 12px 12px;
+  width: 12px;
+  height: 12px;
+}
 /*# sourceMappingURL=style.css.map */
