@@ -1,0 +1,69 @@
+.agents
+  background-color: $section-bg
+  &__title
+    max-width: 500px
+    margin-bottom: 36px
+  &__text
+    max-width: 370px
+    letter-spacing: -0.33px
+    margin-bottom: 60px
+  &-slider
+    display: flex
+    align-items: center
+  &-card
+    margin-bottom: 35px
+    margin: 0 15px
+    box-shadow: 0 0 15px 0 rgba(0,0,0,0.1)
+    &:focus
+      outline: none      
+    &__img
+      width: 100%
+      height: 350px
+      background-color: #cdccce
+  &-info
+    display: flex
+    flex-wrap: wrap
+    align-items: center
+    justify-content: space-between
+    padding: 26px 22px 36px 22px
+    background-color: #fff
+    &__title
+      flex-grow: 1
+      width: 100%
+      margin-bottom: 26px
+      font-size: 15px
+      +bold
+    &__name
+      font-size: 15px
+      color: $primary
+      +bold
+    &__link
+      img
+        width: 17px
+        height: 17px
+    &__link:not(:last-child)
+      margin-right: 30px
+    &__social
+      display: flex
+  &-wrap
+    position: relative
+
+.slider
+  &-arrow__prev
+    position: absolute
+    top: 50%
+    transform: translateY(-50%)
+    left: -30px
+    color: $primary
+    font-size: 40px
+  &-arrow__next
+    position: absolute
+    top: 50%
+    transform: translateY(-50%)
+    right: -30px
+    color: $primary
+    font-size: 40px
+
+  
+      
+      
