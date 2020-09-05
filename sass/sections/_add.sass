@@ -1,0 +1,36 @@
+.add
+  &-block
+    display: flex
+    align-items: center
+    justify-content: space-between
+    margin-bottom: 90px
+    &__img
+      position: relative
+      width: 540px
+      height: 330px
+      background-color: #8da4be
+      .location-first
+        position: absolute
+        bottom: -42px
+        left: 50%
+        transform: translateX(-50%)
+      .location-second
+        position: absolute
+        bottom: -42px
+        right: -57px
+  &-group
+    flex-basis: 50%
+    &__title
+      font-size: 25px
+      margin-bottom: 30px
+      +bold
+    &__text
+      margin-bottom: 50px
+  &-btn
+    border: none
+    padding: 30px 55px
+    background-color: $main-text
+    color: #fff
+    font-size: 18px
+    +bold
+  

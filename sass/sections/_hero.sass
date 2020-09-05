@@ -44,40 +44,13 @@
     position: absolute
     display: flex
     align-items: center
-    width: 50%
     bottom: 0
     right: -57px
-    &__item
+    .location, .phone
       position: relative
-      font-size: 18px
-      padding: 32px 32px 32px 100px
-      width: 100%
       margin-left: -4px
-      color: $main-text
-      background-color: $primary
-      +bold
-    .phone
-      &::before
-        content: ''
-        position: absolute
-        bottom: 0
-        left: 0
-        background: url(../img/hero/phone.svg) no-repeat 50%
-        background-size: 25px 25px
-        width: 25px
-        height: 25px
-        padding: 32px 32px 32px 50px
-    .location
-      &::before
-        content: ''
-        position: absolute
-        bottom: 0
-        left: 0
-        background: url(../img/hero/gps.svg) no-repeat 50%
-        background-size: 25px 25px
-        width: 25px
-        height: 25px
-        padding: 32px 32px 32px 50px 
+      bottom: 0
+      right: 0
 
 
 
