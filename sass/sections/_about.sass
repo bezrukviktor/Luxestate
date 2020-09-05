@@ -1,0 +1,59 @@
+.about
+  &__title
+    max-width: 400px
+    margin-bottom: 36px
+  &__info
+    max-width: 400px
+    margin-bottom: 70px
+  &-block
+    display: flex
+    align-items: center
+    justify-content: space-between
+    &__card
+      position: relative
+      flex-basis: 33%
+      max-width: 345px
+      padding: 145px 68px 50px 68px
+      overflow: hidden
+      box-shadow: 0px 0px 20px 9px rgba(0, 0, 0, 0.08)
+      transition: 0.3s ease
+      &:hover
+        background-color: $primary
+        color: #fff
+        transition: 0.3s ease
+        .about-block__link
+          color: #fff
+          border-bottom: 2px solid #fff
+    &__num
+      position: absolute
+      top: -22%
+      left: -50px
+      font-size: 180px
+      +bold
+    &__title
+      font-size: 18px
+      margin-bottom: 30px
+      +bold      
+    &__text
+      margin: 30px 0
+    &__link
+      font-size: 13px
+      padding-bottom: 10px
+      border-bottom: 2px solid #1f373d
+      transition: 0.3s ease
+      +bold
+    .first::before
+      content: '01'
+      position: absolute
+      left: 40px
+    .second::before
+      content: '02'
+      position: absolute
+      left: 40px
+    .third::before
+      content: '03'
+      position: absolute
+      left: 40px
+
+      
+      
