@@ -1,0 +1,52 @@
+body
+  color: $main-text
+  +reg
+
+a, button
+  text-decoration: none
+  cursor: pointer
+
+a:active, a:focus, button:active, button:focus, input:active, input:focus
+  outline: none
+
+.logo
+  font-size: 25px
+  +bold
+
+.search
+  position: relative
+  width: 480px
+  &-input
+    position: absolute
+    width: 100%
+    border: none
+    border-radius: 5px
+    padding: 25px 25px 25px 58px
+    font-size: 15px
+    color: #919eb1
+    +reg
+    &:focus
+      box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.08)
+    &::placeholder
+      opacity: 1
+      transition: opacity .3s ease
+    &:focus::placeholder
+      opacity: 0
+      transition: opacity .3s ease
+  .fa
+    position: absolute
+    z-index: 1
+    padding: 25px
+    color: #919eb1
+  &-btn
+    position: absolute
+    right: 0
+    padding: 25px 30px
+    border: none
+    border-radius: 0 5px 5px 0
+    background-color: $primary
+    font-size: 15px
+    +med
+    cursor: pointer
+
+
