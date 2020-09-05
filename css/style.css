@@ -65,8 +65,13 @@ a:active, a:focus, button:active, button:focus, input:active, input:focus {
   font-family: 'Montserrat semibold';
 }
 
+section {
+  padding: 65px 0 90px 0;
+}
+
 .search {
   position: relative;
+  display: inline-block;
   width: 480px;
 }
 
@@ -151,10 +156,6 @@ a:active, a:focus, button:active, button:focus, input:active, input:focus {
   font-size: 15px;
   font-family: 'Montserrat medium';
   cursor: pointer;
-}
-
-section {
-  padding: 65px 0 90px 0;
 }
 
 .section__title {
@@ -418,6 +419,7 @@ section {
           justify-content: space-between;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  margin-bottom: 60px;
 }
 
 .catalog-card {
@@ -504,5 +506,25 @@ section {
   background-size: 12px 12px;
   width: 12px;
   height: 12px;
+}
+
+.catalog-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: top;
+      -ms-flex-align: top;
+          align-items: top;
+}
+
+.catalog__btn {
+  border: none;
+  border-radius: 5px;
+  background-color: #fff;
+  margin-left: 40px;
+  padding: 27px 40px;
+  font-size: 15px;
+  color: #1f373d;
+  font-family: 'Montserrat medium';
 }
 /*# sourceMappingURL=style.css.map */
