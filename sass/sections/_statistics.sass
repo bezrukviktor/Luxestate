@@ -1,0 +1,39 @@
+.statistics
+  &-wrap
+    display: flex
+    align-items: center
+    justify-content: space-between
+  &-info
+    flex-basis: 50%
+  &__title
+    max-width: 350px
+    margin-bottom: 70px
+  &__text
+    font-size: 13px
+    line-height: 30px
+    margin-bottom: 40px
+    +med
+  .counter
+    display: flex
+    align-items: center
+    justify-content: space-between
+    flex-wrap: wrap
+    max-width: 430px
+    &-block
+      width: 200px
+      height: 200px
+      margin-bottom: 30px
+      display: flex
+      align-items: center
+      flex-direction: column
+      justify-content: center
+      background-color: $section-bg
+    &__num
+      font-size: 40px
+      color: $primary
+      letter-spacing: -1px
+      margin-bottom: 20px
+      +bold
+    &__text
+      font-size: 14px
+      +bold
