@@ -99,7 +99,12 @@
     &-block__link
       display: none
     &__nav
+      visibility: hidden
       flex-direction: column
       bottom: -210px
+      z-index: -99
+    &__nav--active
+      visibility: visible
+      z-index: 99
     &__link
       padding: 10px 0

@@ -10,6 +10,7 @@
   &-slider
     display: flex
     align-items: center
+    justify-content: space-around
   &-card
     margin-bottom: 35px
     margin: 0 15px
@@ -53,17 +54,27 @@
     position: absolute
     top: 50%
     transform: translateY(-50%)
-    left: -30px
+    left: 30px
     color: $primary
     font-size: 40px
   &-arrow__next
     position: absolute
     top: 50%
     transform: translateY(-50%)
-    right: -30px
+    right: 30px
     color: $primary
     font-size: 40px
 
-  
-      
-      
+@media (max-width: 991px)
+  .agents
+    &-wrap
+      max-width: 350px
+      margin: 0 auto
+    &-card
+      &__img
+        height: 300px
+    &-info
+      flex-direction: column
+      &__social
+        margin-top: 20px
+        

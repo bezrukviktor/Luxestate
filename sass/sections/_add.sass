@@ -19,7 +19,7 @@
         bottom: -42px
         right: -57px
   &-group
-    flex-basis: 50%
+    flex-basis: 40%
     &__title
       font-size: 25px
       margin-bottom: 30px
@@ -38,3 +38,24 @@
       background-color: $primary
       transition: .3s ease
   
+@media (max-width: 991px)
+  .add
+    &-block
+      flex-direction: column
+      justify-content: center
+      &__img
+        width: 100%
+        .location-second
+          right: 50%
+          transform: translateX(50%)
+    &-block:nth-child(2n+1)
+      .add-block__img
+        order: 1
+    &-block:nth-child(3)
+      position: relative
+      .add-btn
+        position: absolute
+        bottom: -110px
+        left: 50%
+        transform: translateX(-50%)
+      

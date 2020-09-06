@@ -10,7 +10,6 @@
     flex-wrap: wrap
     margin-bottom: 60px
   &-card
-    flex-basis: 33%
     max-width: 350px
     margin-bottom: 35px
     box-shadow: 0px 0px 20px 9px rgba(0, 0, 0, 0.08)
@@ -75,5 +74,23 @@
     color: $main-text
     +med
 
+@media (max-width: 991px)
+  .catalog
+    &-card
+      max-width: 300px
+    &__btn
+      padding: 27px 12px
+      font-size: 14px
 
-
+    
+@media (max-width: 658px)
+  .catalog
+    &-wrap
+      flex-direction: column
+    &-form
+      flex-direction: column
+    &__btn
+      width: 100%
+      margin-top: 60px
+      margin-left: 0
+      padding: 20px

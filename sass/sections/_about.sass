@@ -9,9 +9,9 @@
     display: flex
     align-items: center
     justify-content: space-between
+    flex-wrap: wrap
     &__card
       position: relative
-      flex-basis: 33%
       max-width: 345px
       padding: 145px 68px 50px 68px
       overflow: hidden
@@ -33,7 +33,10 @@
     &__title
       font-size: 18px
       margin-bottom: 30px
-      +bold      
+      +bold
+      &::before
+        position: absolute
+        left: 40px
     &__text
       margin: 30px 0
     &__link
@@ -41,19 +44,35 @@
       padding-bottom: 10px
       border-bottom: 2px solid #1f373d
       transition: 0.3s ease
+      color: $main-text
       +bold
     .first::before
       content: '01'
-      position: absolute
-      left: 40px
     .second::before
       content: '02'
-      position: absolute
-      left: 40px
     .third::before
       content: '03'
-      position: absolute
-      left: 40px
 
       
-      
+@media (max-width: 1199px)
+  .about
+    &-block
+      &__card
+        max-width: 300px
+        padding-right: 40px
+
+@media (max-width: 991px)
+  .about
+    &-block
+      justify-content: space-around
+      &__card
+        margin: 0 15px 30px 15px
+
+@media (max-width: 476px)
+  .about
+    &-block
+      &__title::before
+        left: 10px        
+      &__card
+        padding-left: 40px
+        padding-right: 20px
