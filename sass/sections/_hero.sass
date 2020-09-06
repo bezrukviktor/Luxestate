@@ -1,5 +1,5 @@
 .hero
-  padding-bottom: 80px
+  margin-bottom: 80px
   &-wrap
     padding-top: 240px
     padding-bottom: 340px
@@ -53,5 +53,47 @@
       right: 0
 
 
+@media (max-width: 1199px)
+  .hero
+    background: #96bece
+    &-bg
+      display: none
+    .contact-group
+      right: 0
 
+@media (max-width: 658px)
+  .hero
+    &__title
+      font-size: 53px
+    &__location, 
+    &__phone
+      padding: 22px 22px 22px 60px
+      font-size: 13px
+    &__location::before, 
+    &__phone::before
+      padding: 22px 22px 22px 20px
+      width: 13px
+      height: 13px
+
+@media (max-width: 558px)
+  .hero
+    &__title
+      font-size: 46px
+    &__scroll-down, .arrow-down
+      visibility: hidden
+
+@media (max-width: 476px)
+  .hero
+    &-wrap
+      padding-top: 180px
+      padding-bottom: 240px
+    &__title
+      font-size: 36px      
+      line-height: 58px
+    &__location, &__phone
+      width: 100%
+    &__phone
+      margin-bottom: 10px
+  .contact-group
+    flex-direction: column
 

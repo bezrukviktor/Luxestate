@@ -9,16 +9,53 @@
     display: flex
     align-items: center
     justify-content: space-between
+    position: relative
     padding: 40px 0px
   &__logo
     color: $main-text
   &__menu
     display: flex
 .menu
+  &-block
+    display: flex
+    align-items: center
+  &-button
+    display: none
+    align-items: center
+    justify-content: center
+    position: relative
+    height: 60px
+    width: 60px
+    transition: .3s ease-in-out
+    &__line,
+    &__line::before,
+    &__line::after
+      display: block
+      position: absolute
+      height: 4px
+      width: 40px
+      border-radius: 5px
+      background: $primary
+      transition: all 0.5s ease-in-out
+    &__line::before,
+    &__line::after
+      content: ''
+    &__line::before
+      transform: translateY(-13px)
+    &__line::after
+      transform: translateY(13px)
+    &--active
+      .menu-button__line
+        transform: translateX(50%)
+        background: transparent
+      .menu-button__line::before
+        transform: rotate(45deg) translate(-15px, 15px)
+      .menu-button__line::after
+        transform: rotate(-45deg) translate(-15px, -15px)
   &__nav
     margin-right: 100px
     &-link:not(:last-child)
-      padding-right: 33px      
+      padding-right: 33px
   &__link
     font-size: 13px
     color: $main-text
@@ -27,7 +64,42 @@
     margin-left: 23px
     border-radius: 5px
     background-color: $primary
-    
 
-  
+@media (max-width: 991px)
+  .menu
+    &-button
+      display: flex
+    &__nav
+      position: absolute
+      bottom: -46px
+      left: 0
+      display: flex
+      align-items: center
+      justify-content: space-around
+      width: 100%
+      background-color: $primary
+      padding: 15px 0
+      margin-right: 0
+      opacity: 0
+      z-index: 99
+      transition: .3s linear
+      &--active
+        opacity: 1
+        transition: .3s linear
+      &-link:not(:last-child)
+        padding-right: 0
+    &__btn
+      margin-right: 23px
     
+@media (max-width: 476px)
+  .navbar
+    &-wrap
+      padding: 20px 0
+  .menu
+    &-block__link
+      display: none
+    &__nav
+      flex-direction: column
+      bottom: -210px
+    &__link
+      padding: 10px 0

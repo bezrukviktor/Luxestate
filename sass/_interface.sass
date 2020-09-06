@@ -69,7 +69,8 @@ section
   color: $main-text
   +bold
 
-.location::before
+.location::before,
+.phone::before
   content: ''
   position: absolute
   bottom: 0
@@ -92,3 +93,12 @@ section
   padding: 32px 32px 32px 50px
 
 
+@media (max-width: 558px)
+  .search
+    width: 100%
+    &-input
+      padding: 15px 15px 15px 40px
+    &-btn
+      padding: 15px
+    .fa
+      padding: 15px

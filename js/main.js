@@ -1,5 +1,10 @@
 $(document).ready(function () {
 
+  $('.menu-button').click(function () {
+    $('.menu-button').toggleClass('menu-button--active');
+    $('.menu__nav').toggleClass('menu__nav--active');
+  });
+
   $('.counter__num').each(function(){
     $(this).prop('Counter', 0).animate({
       Counter: $(this).text()
